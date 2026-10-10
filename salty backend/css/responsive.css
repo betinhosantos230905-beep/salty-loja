@@ -1,0 +1,140 @@
+@media (max-width: 900px) {
+  .hero__inner,
+  .product,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero__visual {
+    max-width: 360px;
+    margin-inline: auto;
+    width: 100%;
+  }
+  
+  .perks {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .cats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .summary {
+    position: static;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  .nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 16px 16px;
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+  
+  .nav.is-open {
+    display: flex;
+  }
+  
+  .nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  
+  .header__inner {
+    gap: 12px;
+  }
+  
+  .header__actions {
+    margin-left: auto;
+  }
+  
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform .2s;
+  }
+  
+  .sidebar.is-open {
+    transform: none;
+  }
+  
+  .admin-main {
+    margin-left: 0 !important;
+  }
+  
+  .admin-top .hamburger {
+    display: block;
+  }
+  
+  .stats {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .cats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .perks,
+  .form-grid,
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  
+  .card__foot {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .card__body {
+    padding: 12px;
+  }
+  
+  .toolbar {
+    flex-direction: column;
+  }
+  
+  .toolbar select {
+    width: 100%;
+  }
+  
+  .hero__inner {
+    padding-block: 32px;
+  }
+  
+  .cart-item {
+    grid-template-columns: 60px 1fr;
+  }
+  
+  .cart-item > strong {
+    grid-column: 2;
+  }
+  
+  .stats {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .btn--sm.btn--primary[data-add] {
+    font-size: .8rem;
+    padding: 8px;
+  }
+}
